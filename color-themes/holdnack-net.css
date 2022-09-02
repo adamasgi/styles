@@ -14,6 +14,6 @@
 	--ct-warning: #e85395;
 	--ct-info: #00a693;
 	/**/
-	--ct-important: ;
-	--ct-unimportant: ;
+	--ct-important: #ffff00;
+	--ct-unimportant: #847a8d;
 }

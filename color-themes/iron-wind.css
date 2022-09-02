@@ -1,0 +1,19 @@
+:root {
+	/**/
+	--ct-main-fg: #fffff0;
+	--ct-main-bg: #4d504b;
+	--ct-alt-fg: #4d504b;
+	--ct-alt-bg: #fffff0;
+	--ct-accent: #008080;
+	/**/
+	--ct-link: #0088dc;
+	--ct-link-hover: #db5a6b;
+	--ct-link-visited: #0088ad;
+	/**/
+	--ct-error: #ff0400;
+	--ct-warning: #ff4200;
+	--ct-info: #d0db61;
+	/**/
+	--ct-important: #880085;
+	--ct-unimportant: #ebb0d7;
+}

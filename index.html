@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <head>
-  <title>Hex to HSL Converter</title>
+  <title>Styles</title>
   <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" media="all" type="text/css" href="./color-themes/holdnack-net.css" id="ct-theme">
 </head>
 <body>
-  <main>
-	<h1>Basic Hex-code to HSL converter</h1>
-	<p>
-	  You can include an '#' or just the 6 hex.
-	</p>
-	<input type="text" id="main-input" placeholder="#000000" value="#000000">
-	<h2>Result:</h2>
-	<div id="result"></div>
-	<a href="https://stackoverflow.com/questions/46432335/hex-to-hsl-convert-javascript">Source for HSL conversion code</a>
-	<p>
-	  Currently, this site doesn't use HTTPS, due to current implementation issues with Github Pages.
-	  Since this site is completely client side, there is nothing for anyone to steal.
-	</p>
-  </main>
-  <script src="hex-to-hsl.js"></script>
+  <h1>Theme selector</h1>
+  <fieldset id="theme-selector">
+	<legend>Choose a Theme</legend>
+	<div>
+	  <input type="radio" id="holdnack-net-ct" name="ct" value="./color-themes/holdnack-net.css" checked>
+	  <label for="holdnack-net-ct">Holdnack Net</label>
+	</div>
+	<div>
+	  <input type="radio" id="iron-wind-ct" name="ct" value="./color-themes/iron-wind.css">
+	  <label for="iron-wind-ct">Iron Wind</label>
+	</div>
+	<div>
+	  <input type="radio" id="elextric-boogi-ct" name="ct" value="./color-themes/elextric-boogi.css">
+	  <label for="elextric-boogi-ct">Elextric Boogi</label>
+	</div>
+  </fieldset>
+  <script src="index.js"></script>
 </body>

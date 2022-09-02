@@ -1,9 +1,13 @@
-@import "./color-themes/holdnack-net.css";
+@import "./margins.css";
 
 body {
-	font-size: 13px;
 	background-color: var(--ct-main-bg);
 	color: var(--ct-main-fg);
+}
+
+h1 {
+	font-family: "Overpass", sans-serif;
+	color: var(--ct-warning);s
 }
 a:link {
 	color: var(--ct-link);
@@ -18,7 +22,7 @@ a:hover {
 }
 
 main {
-	margin: 0% 23%;
+	font-size: 1.15rem;
 }
 
 #main-input {
@@ -44,4 +48,41 @@ main {
 	font-size: 1.3rem;
 	/*margin: 2% 0%;
 	padding: 0.5% 0%;*/
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  /*background-color: #fff;*/
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  /*color: var(--ct-important);*/
+  width: 1.15em;
+  height: 1.15em;
+  border: solid 1px var(--ct-unimportant);
+  transition: 0.3s all linear;
+}
+
+
+input[type="radio"]::before {
+	color: var(--ct-unimportant);
+	background-color: var(--ct-important);
+	box-shadow: inset 1em 1em var(--ct-unimportant);
+}
+
+input[type="radio"]:checked {
+	background-color: var(--ct-accent);
+	border: solid 1px var(--ct-important);
+}
+
+#theme-selector {
+	border: dashed 5px var(--ct-accent);
+}
+
+
+#theme-selector, legend {
+	color: var(--ct-unimportant);
 }
