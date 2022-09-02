@@ -57,8 +57,8 @@ function hex_to_hsl(hex_color) {
 		if (is_valid_hex(hex_color[0])) {
 			console.log("Valid first char")
 		} else {
-			console.log("Cannot start with", hex_color[0])
-			return false;
+			return "Cannot start with" + hex_color[0]
+
 		}
 		const hex = hex_color.slice(0,6);
 		if (is_all_valid_hex(hex)) {
@@ -67,15 +67,14 @@ function hex_to_hsl(hex_color) {
 			return r
 		} else {
 			console.log("At least one invalid")
-			return false;
+			return "At least one invalid char";
 		}
 	} else if (7 == hex_color.length) {
 		console.log("Valid length")
 		if (hex_color[0] == "#")  {
 			console.log("Valid first char")
  		} else {
-			console.log("Seven char hex codes must start with '#', not", hex_color[0])
-			return false;
+			return "At least one invalid char";
 		}
 		const hex = hex_color.slice(1,7);
 		if (is_all_valid_hex(hex)) {
@@ -83,11 +82,11 @@ function hex_to_hsl(hex_color) {
 			var r = calc(hex)
 			return r;
 		} else {
-			console.log("At least one invalid")
+			return "At least one invalid char";
 		}
 	} else {
-		console.log(hex_color.length, "is an invalid length")
-		return false;
+		return hex_color.length + " is an invalid length"
+
 	}
 
 }																			   
@@ -108,7 +107,5 @@ button.addEventListener('keypress', function(event) {
 
 window.addEventListener('load', function() {
 	const res = hex_to_hsl("#000000")
-	if (res) {
-		result.innerHTML = res
-	}
+	result.innerHTML = res
 })
