@@ -99,9 +99,7 @@ button.addEventListener('keypress', function(event) {
 	if (event.key == "Enter") {
 		console.log(event.target.value)
 		const res = hex_to_hsl(event.target.value)
-		if (res) {
-			result.innerHTML = res
-		}
+		result.innerHTML = res
 	}
 })
 
