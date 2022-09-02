@@ -56,6 +56,8 @@ function hex_to_hsl(hex_color) {
 		console.log("Valid length")
 		if (is_valid_hex(hex_color[0])) {
 			console.log("Valid first char")
+		} else if (hex_color[0] == "3") {
+			return "Cannot have a 6 char code that starts with '#'"
 		} else {
 			return "Cannot start with" + hex_color[0]
 
