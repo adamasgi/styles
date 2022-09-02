@@ -1,0 +1,18 @@
+:root {
+	/**/
+	--ct-main-fg: ;
+	--ct-main-bg: ;
+	--ct-alt-fg: ;
+	--ct-alt-bg: ;
+	/**/
+	--ct-link: ;
+	--ct-link-hover: ;
+	--ct-link-visited: ;
+	/**/
+	--ct-error: ;
+	--ct-warning: ;
+	--ct-info: ;
+	/**/
+	--ct-important: ;
+	--ct-unimportant: ;
+}

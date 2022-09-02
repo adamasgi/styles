@@ -1,17 +1,18 @@
 * Color Themes
 ** Basic format
 A color theme css files is just a collection of variables in the :root psuedo-class
-The variables follow a
+The variables follow an expectec 
+I namespace them with 'ct’
 An example file is included [[file:/styles/example.css][here]].
 #+BEGIN_SRC css
 :root {
-	--fg: #ffdec2;
-	--bg: #100c08;
-	--inv-fg: #001b32;
-	--alt-bg: #292623;
-	--my-green: #00a693;
-	--my-pink: #e85395;
-	--my-blue: #00aaee;
-	--my-purple: #997a8d;
+	--ct-fg: #ffdec2;
+	--ct-bg: #100c08;
+	--ct-inv-fg: #001b32;
+	--ct-alt-bg: #292623;
+	--ct-green: #00a693;
+	--ct-pink: #e85395;
+	--ct-blue: #00aaee;
+	--ct-purple: #997a8d;
 }
 #+END_SRC
