@@ -8,13 +8,22 @@ I namespaced them with 'ct’ to hopefully avoid any collisions.
 An example file is included [[file:/color-themes/example.css][here]].
 #+BEGIN_SRC css
 :root {
-	--ct-fg: #ffdec2;
-	--ct-bg: #100c08;
-	--ct-inv-fg: #001b32;
-	--ct-alt-bg: #292623;
-	--ct-green: #00a693;
-	--ct-pink: #e85395;
-	--ct-blue: #00aaee;
-	--ct-purple: #997a8d;
+	/**/
+	--ct-main-fg: ;
+	--ct-main-bg: ;
+	--ct-alt-fg: ;
+	--ct-alt-bg: ;
+	--ct-accent: ;
+	/**/
+	--ct-link: ;
+	--ct-link-hover: ;
+	--ct-link-visited: ;
+	/**/
+	--ct-error: ;
+	--ct-warning: ;
+	--ct-info: ;
+	/**/
+	--ct-important: ;
+	--ct-unimportant: ;
 }
 #+END_SRC
