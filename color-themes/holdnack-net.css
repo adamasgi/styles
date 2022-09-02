@@ -1,10 +1,19 @@
 :root {
-	--fg: #ffdec2;
-	--bg: #100c08;
-	--inv-fg: #001b32;
-	--alt-bg: #292623;
-	--my-green: #00a693;
-	--my-pink: #e85395;
-	--my-blue: #00aaee;
-	--my-purple: #997a8d;
+	/**/
+	--ct-main-fg: #ffdec2;
+	--ct-main-bg: #00213d;
+	--ct-alt-fg: #00213d;
+	--ct-alt-bg: #ffdec2;
+	--ct-accent: #cd607e;
+	/**/
+	--ct-link: #00aaee;
+	--ct-link-hover: #e85395;
+	--ct-link-visited: #00aaff;
+	/**/
+	--ct-error: #fa3c53;
+	--ct-warning: #e85395;
+	--ct-info: #00a693;
+	/**/
+	--ct-important: ;
+	--ct-unimportant: ;
 }

@@ -47,7 +47,7 @@ function calc(hex) {
 	l = Math.round(l);
 	h = Math.round(360*h);
 	var colorInHSL = 'hsl(' + h + ', ' + s + '%, ' + l + '%)';
-	var res =  colorInHSL + ", #" + hex
+	var res = "<div id='hex-code'>"+ "#" + hex + "</div>" + "<code id='hsl'>" + colorInHSL + "</code>"
 	return res
 }
 
@@ -89,7 +89,7 @@ function hex_to_hsl(hex_color) {
 
 	}
 
-}																			   
+}
 
 
 const button = document.getElementById("main-input")
@@ -109,6 +109,6 @@ button.addEventListener('keypress', function(event) {
 
 
 window.addEventListener('load', function() {
-	const res = hex_to_hsl("#000000")
-	result.innerHTML = res
+	const res = hex_to_hsl("#000000");
+	result.innerHTML = res;
 })

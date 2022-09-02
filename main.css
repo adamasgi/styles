@@ -1,6 +1,19 @@
+@import "./color-themes/holdnack-net.css";
+
 body {
-	background-color: #111111;
-	color: #eefefe;
+	background-color: var(--ct-main-bg);
+	color: var(--ct-main-fg);
+}
+a:link {
+	color: var(--ct-link);
+	text-decoration: none;
+	transition: color 0.6s ease-in;
+}
+a:visited {
+	color: var(--ct-link-visited);
+}
+a:hover {
+	color: var(--ct-link-hover);
 }
 
 main {
@@ -8,14 +21,26 @@ main {
 }
 
 #main-input {
-	color: #111111;
-	background-color: #eefefe;
+	color: var(--ct-alt-fg);
+	background-color: var(--ct-alt-bg);
 	border: none;
 	padding: 5px 2px;
 }
 
 #result {
+	border: solid 1px var(--ct-accent);
+	padding: clamp(20px, 5%, 40px);
+	margin: 5% 0.5%;
+}
+
+#hex-code {
+	font-size: 1.2rem;
+	padding: 1% 0%;
+	/*margin: 2% 0%;*/
+}
+
+#hsl {
 	font-size: 1.3rem;
-	margin: 0.5% 0%;
-	padding: 0.5% 0%;
+	/*margin: 2% 0%;
+	padding: 0.5% 0%;*/
 }
