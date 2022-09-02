@@ -1,6 +1,7 @@
 @import "./color-themes/holdnack-net.css";
 
 body {
+	font-size: 13px;
 	background-color: var(--ct-main-bg);
 	color: var(--ct-main-fg);
 }
