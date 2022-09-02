@@ -1,0 +1,21 @@
+body {
+	background-color: #111111;
+	color: #eefefe;
+}
+
+main {
+	margin: 0% 23%;
+}
+
+#main-input {
+	color: #111111;
+	background-color: #eefefe;
+	border: none;
+	padding: 5px 2px;
+}
+
+#result {
+	font-size: 1.3rem;
+	margin: 0.5% 0%;
+	padding: 0.5% 0%;
+}
