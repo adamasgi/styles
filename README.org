@@ -1,6 +1,6 @@
 
 * Hex-Code to HSL Converter
-[[file:./index.html][barebones]] version
+[[http://adamasgi.github.com/styles/index.html][barebones]] version
 * Color Themes
 ** Basic format
 A color theme css files is just a collection of variables in the :root psuedo-class.
