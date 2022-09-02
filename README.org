@@ -3,7 +3,7 @@
 A color theme css files is just a collection of variables in the :root psuedo-class
 The variables follow an expectec 
 I namespace them with 'ct’
-An example file is included [[file:/styles/example.css][here]].
+An example file is included [[file:/color-themes/example.css][here]].
 #+BEGIN_SRC css
 :root {
 	--ct-fg: #ffdec2;
