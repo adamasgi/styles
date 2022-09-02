@@ -1,4 +1,7 @@
 @import "./margins.css";
+* {
+	transition: color 0.2s linear;
+}
 
 body {
 	background-color: var(--ct-main-bg);
