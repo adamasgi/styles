@@ -100,8 +100,13 @@ button.addEventListener('keypress', function(event) {
 		console.log(event.target.value)
 		const res = hex_to_hsl(event.target.value)
 		result.innerHTML = res
+	} else {
+		console.log(event.target.value)
+		const res = hex_to_hsl(event.target.value)
+		result.innerHTML = res
 	}
 })
+
 
 window.addEventListener('load', function() {
 	const res = hex_to_hsl("#000000")
