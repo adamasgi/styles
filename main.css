@@ -1,4 +1,4 @@
-@import "./margins.css";
+@import "margins.css";
 * {
 	transition: color 0.2s linear;
 }
