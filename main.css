@@ -36,7 +36,7 @@ main {
 }
 
 #result {
-	border: solid 1px var(--ct-accent);
+	border: solid 10px var(--ct-accent);
 	padding: clamp(20px, 5%, 40px);
 	margin: 5% 0.5%;
 }
